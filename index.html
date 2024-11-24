@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çevresel Katkı Puanlama Sistemi</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Stil dosyasını ekliyoruz -->
+</head>
+<body>
+
+<header>
+    <div class="menu">
+        <button id="hamburger" onclick="toggleMenu()">☰</button> <!-- Üç çizgi menü -->
+        <div id="sidebar" class="sidebar">
+            <a href="#" onclick="showAbout()">Hazırlayanlar</a>
+            <a href="#" onclick="showInfo()">Nedir?</a>
+        </div>
+    </div>
+    <h1>Çevresel Katkı Puanlama Sistemi</h1>
+</header>
+
+<!-- Ana içerik -->
+<div class="content">
+    <h2>Veri Girişi</h2>
+    <form id="data-entry-form">
+        <label for="inputData">Veri Giriniz:</label>
+        <input type="text" id="inputData" required>
+        <button type="submit">Veri Ekle</button>
+    </form>
+
+    <div class="message" id="message"></div>
+    
+    <div class="output">
+        <h3>Veri Görme</h3>
+        <div id="data-output">
+            <!-- Giriş yapılmış veriler burada gösterilecek -->
+        </div>
+    </div>
+</div>
+
+<!-- Proje hakkında açıklama ve hazırlayanlar -->
+<div id="about-section" style="display: none;">
+    <h3>Hazırlayanlar</h3>
+    <ul>
+        <li>Osman Onuk (Danışman Öğretmen)</li>
+        <li>Muhammedcan Arslanparçası</li>
+        <li>Yağız Efe Yılmaz</li>
+        <li>Bilal Yiğit Tezcanlı</li>
+    </ul>
+</div>
+
+<div id="info-section" style="display: none;">
+    <h3>Proje Nedir?</h3>
+    <p>Çevreye duyarlı bir nesil yetiştirmeyi amaçlayan, okullarda geri dönüşüm bilincini geliştiren bir projedir. Bu proje, öğrencilere atıkların türlerine göre ayrıştırılmasını öğretir, aynı zamanda bu süreçte ödüller kazanarak çevreye katkı sağlama motivasyonu yaratır. Proje, okullarda geri dönüşüm noktaları oluşturarak, öğrencilerin bu noktada topladıkları atıkları doğru şekilde ayrıştırmalarını sağlar.</p>
+</div>
+
+<footer>
+    <p>Torbalı Anadolu Lisesi Coğrafya TÜBİTAK Projesi</p>
+</footer>
+
+<script src="scripts.js"></script> <!-- JavaScript dosyasını dahil et -->
+</body>
+</html>
